@@ -1,0 +1,31 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <p-card class="w-full max-w-md">
+    <p-header class="text-center text-xl font-bold">
+      Account
+    </p-header>
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="username">Username</label>
+        <p-input-group>
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-user"></i>
+          </span>
+          <input id="username" pInputText type="text" placeholder="Username" [(ngModel)]="username"/>
+        </p-input-group>
+      </div>
+      <div class="p-field">
+        <label for="password">Password</label>
+        <p-input-group>
+          <span class="p-inputgroup-addon">
+            <i class="pi pi-lock"></i>
+          </span>
+          <input id="password" pInputText type="password" placeholder="Password" [(ngModel)]="password" />
+        </p-input-group>
+      </div>
+      <div class="p-field text-center">
+        <p-button pButton type="button" label="Login" class="p-mr-2" (onClick)="login()"></p-button>
+        <p-button pButton type="button" label="Sign Up" class="p-button-secondary"></p-button>
+      </div>
+    </div>
+  </p-card>
+</div>
